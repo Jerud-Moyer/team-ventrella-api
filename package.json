@@ -2,7 +2,7 @@
   "name": "team-ventrella-api",
   "version": "1.0.0",
   "description": "data server for tonyventrella.com",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
