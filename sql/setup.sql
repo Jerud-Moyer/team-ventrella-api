@@ -5,6 +5,12 @@ CREATE TABLE columns (
   title: TEXT;
   content: TEXT;
   created_at: DATE DEFAULT CURRENT_TIMESTAMP;
-  publish_date: DATE,
   published: BOOLEAN DEFAULT FALSE;
+);
+
+CREATE TABLE users (
+	id BIGINT GENERATED ALWAYS AS IDENTITY,
+	email TEXT UNIQUE NOT NULL,
+	password_hash TEXT NOT NULL,
+	first_name TEXT
 );
